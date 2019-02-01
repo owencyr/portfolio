@@ -1,12 +1,39 @@
+:root {
+  --green: #618B61;
+  --dark-green: #2B592B;
+  --brown: #AE9379;
+  --text: #82A582;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-green);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+
+.intro-pane, .projects {
+  background-color: var(--green);
+  margin: auto;
+  
+}
+
+.projects {
+  background-color: var(--brown);
+}
 
 li {
   list-style: none;
 }
 
-.intro-pane {
-  float:left;
-}
-
-.projects {
-  float:right;
+@media screen and (min-width: 800px) {
+  main {
+  }
 }
