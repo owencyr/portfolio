@@ -45,7 +45,6 @@ function generateHTML(item, index) {
 }
 
 function handlePortfolio () {
-  // console.log('about to attempt to load PROJECTS');
   render();
 }
 

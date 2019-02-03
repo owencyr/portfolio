@@ -1,9 +1,17 @@
+/* more saturated palette */
 :root {
+  --green: #205C20;
+  --dark-green: #0F460F;
+  --brown: #734D28;
+}
+
+
+/* original, very washed out palette */
+/* :root {
   --green: #618B61;
   --dark-green: #2B592B;
   --brown: #AE9379;
-  --text: #82A582;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -18,12 +26,12 @@ main {
   height: 100vh;
 }
 
-.intro-pane, .projects {
+.intro-pane, .projects-pane, .contact-pane {
   background-color: var(--green);
   flex-grow: 1;
 }
 
-.projects {
+.projects-pane {
   background-color: var(--brown);
 }
 
