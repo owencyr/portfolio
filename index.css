@@ -26,21 +26,55 @@ main {
   height: 100vh;
 }
 
-.intro-pane, .projects-pane, .contact-pane {
+.intro-pane, .details-pane, .contact-pane {
   background-color: var(--green);
   flex-grow: 1;
 }
 
-.projects-pane {
+.intro-pane img {
+  max-width: 100px;
+  max-height: 168px;
+  height: auto;
+  width: auto;
+  padding: 10px;
+}
+
+.details-pane {
   background-color: var(--brown);
+}
+
+p.about, li {
+  margin-right: 25px;
+}
+
+p.about {
+  margin-left: 40px;
 }
 
 li {
   list-style: none;
 }
 
+li img {
+  /* i want this to have the image go across specified percentage of parent container */
+  max-width: 70%;
+  height: auto;
+  width: auto;
+}
+
+
+.contacts i {
+  color: black;
+}
+
 @media screen and (max-width: 800px) {
   main {
     flex-direction: column;
+  }
+  .intro-pane img {
+    float: right;
+  }
+  li img {
+    max-width: 235px;
   }
 }
